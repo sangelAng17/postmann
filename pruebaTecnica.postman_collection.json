@@ -1,0 +1,505 @@
+{
+	"info": {
+		"_postman_id": "7ccfcfd6-7253-431e-b341-1f6e3bf47306",
+		"name": "pruebaTecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reserva",
+			"item": [
+				{
+					"name": "pruebaTecnicaD",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8020/api/v1/reserva/delete/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"reserva",
+								"delete",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pruebaTecnicaP",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"fechaIngreso\": \"25/09/2000\",\r\n    \"fechaSalida\": \"28/12/2027\",\r\n    \"cantPersonas\": \"50\",\r\n    \"ciudad\": {\r\n        \"idCiudad\": 12\r\n    },\r\n    \"persona\": {\r\n        \"idUsuario\": 1\r\n    },\r\n    \"servicio\": {\r\n        \"idServicio\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/reserva/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"reserva",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pruebaTecnicaPos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaIngreso\": \"25/09/2000\",\r\n    \"fechaSalida\": \"28/12/2027\",\r\n    \"cantPersonas\": \"50\",\r\n    \"ciudad\": {\r\n        \"idCiudad\": 11\r\n    },\r\n    \"persona\": {\r\n        \"nombres\": \"angel santi\",\r\n        \"apellidos\": \"jueves\",\r\n        \"documento\": \"1030647894\"\r\n    },\r\n    \"servicio\": {\r\n        \"idServicio\": 3\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/reserva/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"reserva",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PruebaTenicaG",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":18,\r\n    \"name\":\"Producto desde el postman\",\r\n    \"categoria\" : \"X\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/reserva/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"reserva",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "PruebaTenicaG Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/person/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"person",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pruebaTecnicaPos Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\": \"prueba\",\r\n    \"apellidos\": \"prueba\",\r\n    \"documento\": \"111111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/person/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"person",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pruebaTecnicaP Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUsuario\": 2,\r\n    \"nombres\": \"prueba update\",\r\n    \"apellidos\": \"prueba update\",\r\n    \"documento\": \"111111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/person/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"person",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pruebaTecnicaD Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8020/api/v1/person/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"person",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ciudad",
+			"item": [
+				{
+					"name": "PruebaTenicaG Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":18,\r\n    \"name\":\"Producto desde el postman\",\r\n    \"categoria\" : \"X\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/ciudad/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"ciudad",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pruebaTecnicaPos Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ciudad\":\"Caldas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/ciudad/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"ciudad",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pruebaTecnicaP Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCiudad\": 13,\r\n    \"ciudad\": \"Caldas actualizado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/ciudad/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"ciudad",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pruebaTecnicaD Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8020/api/v1/ciudad/delete/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"ciudad",
+								"delete",
+								"13"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Servicios",
+			"item": [
+				{
+					"name": "pruebaTecnicaD Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8020/api/v1/servicio/delete/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"servicio",
+								"delete",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pruebaTecnicaP Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idServicio\": 4,\r\n    \"tipoHabitacion\": \"Compartido\",\r\n    \"precio\": \"10000\",\r\n    \"opciones\": \"Cancelacion gratis\",\r\n    \"contenido\": \"balcón, vistas al mar, vistas a la montaña , terraza y WiFi gratis\",\r\n    \"camas\": \"10\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/servicio/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"servicio",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pruebaTecnicaPos Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoHabitacion\": \"Compartido\",\r\n    \"precio\": \"700000\",\r\n    \"opciones\": \"Cancelacion gratis\",\r\n    \"contenido\": \"balcón, vistas al mar, vistas a la montaña , terraza y WiFi gratis\",\r\n    \"camas\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/servicio/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"servicio",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PruebaTenicaG Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":18,\r\n    \"name\":\"Producto desde el postman\",\r\n    \"categoria\" : \"X\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/api/v1/servicio/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"api",
+								"v1",
+								"servicio",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
